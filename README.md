@@ -1,5 +1,7 @@
 ## Primeira Aula PanAcademy
 
-Curiosidade: Gosto de astronomia
+Filipe dos Santos
 
-Uma coisa q gostaria de fazer: Escalar uma grande montanha
+Batata frita
+
+Escalar uma grande montanha
