@@ -1,7 +1,3 @@
-## Primeira Aula PanAcademy
+# PanAcademy
 
-Filipe dos Santos
-
-Batata frita
-
-Escalar uma grande montanha
+Repositório com as aulas e atividades realizadas durante o bootcamp PanAcademy.
