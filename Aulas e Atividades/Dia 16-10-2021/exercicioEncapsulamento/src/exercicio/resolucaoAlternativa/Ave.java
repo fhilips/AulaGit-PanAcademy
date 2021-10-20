@@ -1,10 +1,6 @@
-package exercicio;
+package exercicio.resolucaoAlternativa;
 
-public class Ave extends Animal{
-
-	public Ave(String especie) {
-		super(especie);
-	}
+public class Ave implements Animal{
 
 	@Override
 	public void comunicar() {
@@ -15,5 +11,5 @@ public class Ave extends Animal{
 	public void movimentar() {
 		System.out.println("O ave movimenta-se voando!");
 	}
-	
+		
 }

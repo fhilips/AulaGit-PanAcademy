@@ -1,11 +1,6 @@
-package exercicio;
+package exercicio.resolucaoAlternativa;
 
-public class Mamifero extends Animal{
-
-	public Mamifero(String especie) {
-		super(especie);
-		// TODO Auto-generated constructor stub
-	}
+public class Mamifero implements Animal{
 
 	@Override
 	public void comunicar() {
