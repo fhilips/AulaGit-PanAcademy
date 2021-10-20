@@ -2,11 +2,6 @@ package exercicio;
 
 public class Mamifero extends Animal{
 
-	public Mamifero(String especie) {
-		super(especie);
-		// TODO Auto-generated constructor stub
-	}
-
 	@Override
 	public void comunicar() {
 		System.out.println("O mamífero comunica-se fazendo barulho!"); 		
