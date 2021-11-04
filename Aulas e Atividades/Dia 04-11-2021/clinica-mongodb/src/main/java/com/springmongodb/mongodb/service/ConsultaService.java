@@ -11,4 +11,6 @@ public interface ConsultaService {
 	public Consulta obterPorCod(String cod);
 	
 	public Consulta criar(Consulta consulta);
+
+	public Consulta atualizar(String id, Consulta consulta);
 }
