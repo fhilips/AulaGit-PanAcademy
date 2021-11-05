@@ -15,16 +15,26 @@ devem ser feitos e entregues:
 
 <h3 align="left">Resolução:</h3>
 Foi criado uma coleção para gerenciamento de contas bancarias.<br> 
-Cada conta possuí inicialmente os seguintes atributos:
-  - nome
-  - CPF
-  - digito
-  - numeroConta
-  - dataCriacao
-  - dataAtualizacao.<br> 
-Cada conta possuí um saldo, que contém os seguintes atributos: valorTotal, dataAtualizacao.<br> 
-Cada saldo possuí debitos, que possuem os seguintes atributos: valor e dataCriacao.
+Cada conta possuí inicialmente os seguintes atributos:<br> 
+   &emsp;&emsp;- nome<br> 
+   &emsp;&emsp;- CPF<br> 
+   &emsp;&emsp;- digito<br> 
+   &emsp;&emsp;- numeroConta<br> 
+   &emsp;&emsp;- dataCriacao<br> 
+   &emsp;&emsp;- dataAtualizacao.<br> <br>
+Cada conta possuí um saldo, que contém os seguintes atributos: <br>
+   &emsp;&emsp;- valorTotal<br> 
+   &emsp;&emsp;- dataAtualizacao.<br> <br>
+Cada saldo possuí debitos, que possuem os seguintes atributos:<br>
+   &emsp;&emsp;- valor<br> 
+   &emsp;&emsp;- dataCriacao.<br> 
 <br><br>
+
+## Comandos
+
+---
+
+<br>
 <details>
   <summary>Inserção dos documentos</summary>
   <br>
@@ -113,6 +123,9 @@ Cada saldo possuí debitos, que possuem os seguintes atributos: valor e dataCria
 
 <details>
   <summary>Atualização de documentos por nome</summary> 
+  <br>
+  Mudar uma pessoa com o nome "Charles Auguso" para ""Charles Augusto"
+  <br><br>
   <pre>
   db.getCollection('Conta').update(
     { "nome" : "Charles Auguso" },
@@ -123,7 +136,10 @@ Cada saldo possuí debitos, que possuem os seguintes atributos: valor e dataCria
 </details>
 
 <details>
-  <summary>Inserir um novo campo em todos os documents</summary>
+  <summary>Inserir um novo campo em todos os documentos</summary>
+  <br>
+  Inserir o campo "DataNascimento" em todos os documentos
+  <br><br>
   <pre>
   db.getCollection('Conta').update(
     { }, 
@@ -135,6 +151,9 @@ Cada saldo possuí debitos, que possuem os seguintes atributos: valor e dataCria
 
 <details>
   <summary>Exclusão de um documento por id</summary>
+  <br>
+  Excluir o documento de id "6181e82ce17a50870a46814a"
+  <br><br>
   <pre>
   db.getCollection('Conta').remove({ "_id" : ObjectId("6181e82ce17a50870a46814a") });
   </pre>
@@ -142,6 +161,9 @@ Cada saldo possuí debitos, que possuem os seguintes atributos: valor e dataCria
 
 <details>
   <summary>Projeção do valorTotal de cada saldo sem o id</summary>
+  <br>
+  Projetar o valor total do saldo de cada conta
+  <br><br>
   <pre>
   db.getCollection('Conta').find({}, {'saldo.valorTotal' : 1, _id : 0})  
   </pre>
@@ -156,7 +178,7 @@ Cada saldo possuí debitos, que possuem os seguintes atributos: valor e dataCria
 </details>
 
 <details>
-  <summary>Projeção de todas as contas com valor total do saldo menor do que 10000.0 e 
+  <summary>Projeção de todas as contas com valor total do saldo menor do que 10000.0, e 
   com debitos com valor maiores de 600.0</summary>
   <pre>
   db.getCollection('Conta').find(

@@ -1,0 +1,77 @@
+/* 1 */
+{    
+  "nome" : "Filipe dos Santos",
+  "CPF" : "415.674.365-9",
+  "digito" : "2",
+  "numeroConta" : "1234567",
+  "dataCriacao" : ISODate("2021-07-12T10:00:20.000Z"),
+  "dataAtualizacao" : ISODate("2021-07-12T10:00:20.000Z"),
+  "saldo" : {
+      "valorTotal" : 5000.0,
+      "dataAtualizacao" : ISODate("2021-07-12T10:00:20.000Z"),
+      "debito" : {}
+  }
+}
+/* 2 */
+{
+  "nome" : "Charles Auguso",
+  "CPF" : "369.684.398-9",
+  "digito" : "3",
+  "numeroConta" : "7654321",
+  "dataCriacao" : ISODate("2021-05-10T10:00:20.000Z"),
+  "dataAtualizacao" : ISODate("2021-05-10T10:00:20.000Z"),
+  "saldo" : {
+      "valorTotal" : 5000.0,
+      "dataAtualizacao" : ISODate("2021-05-16T10:00:20.000Z"),
+      "debito" : {
+          "valor" : 1000.0,
+          "dataCriacao" : ISODate("2021-05-10T10:00:20.000Z")
+      }
+  }
+}
+/* 3 */
+{      
+  "nome" : "Malaquias Geraldo",
+  "CPF" : "152.323.111-9",
+  "digito" : "8",
+  "numeroConta" : "1564875",
+  "dataCriacao" : ISODate("2021-04-10T10:00:20.000Z"),
+  "dataAtualizacao" : ISODate("2021-04-10T10:00:20.000Z"),
+  "saldo" : {
+      "valorTotal" : 20000.0,
+      "dataAtualizacao" : ISODate("2021-04-18T10:00:20.000Z"),
+      "debito" : [ 
+          {
+              "valor" : 1000.0,
+              "dataCriacao" : ISODate("2021-04-18T10:00:20.000Z")
+          }, 
+          {
+              "valor" : 500.0,
+              "dataCriacao" : ISODate("2021-04-19T10:00:20.000Z")
+          }
+      ]
+  }
+}
+/* 4 */
+{      
+  "nome" : "Andreia gomes",
+  "CPF" : "233.311.133-4",
+  "digito" : "7",
+  "numeroConta" : "5687899",
+  "dataCriacao" : ISODate("2021-08-10T10:00:20.000Z"),
+  "dataAtualizacao" : ISODate("2021-08-15T10:00:20.000Z"),
+  "saldo" : {
+      "valorTotal" : 15000.0,
+      "dataAtualizacao" : ISODate("2021-08-12T10:00:20.000Z"),
+      "debito" : [ 
+          {
+              "valor" : 60.0,
+              "dataCriacao" : ISODate("2021-08-12T10:00:20.000Z")
+          }, 
+          {
+              "valor" : 400.0,
+              "dataCriacao" : ISODate("2021-08-15T10:00:20.000Z")
+          }
+      ]
+  }
+}
