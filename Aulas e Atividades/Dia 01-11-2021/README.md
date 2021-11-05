@@ -28,13 +28,10 @@ Cada conta possuí um saldo, que contém os seguintes atributos: <br>
 Cada saldo possuí debitos, que possuem os seguintes atributos:<br>
    &emsp;&emsp;- valor<br> 
    &emsp;&emsp;- dataCriacao.<br> 
-<br><br>
+
 
 ## Comandos
 
----
-
-<br>
 <details>
   <summary>Inserção dos documentos</summary>
   <br>
