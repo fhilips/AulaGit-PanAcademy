@@ -36,24 +36,27 @@ public class ConsultaServiceImpl implements ConsultaService {
 	@Override
 	public Consulta criar(Consulta consulta) {
 		
-		this.medicoRepository.save(consulta.getMedico());
-//
-//		Medico medico = this.medicoRepository
-//							.findById(consulta.getMedico().getId())
-//							.orElseThrow(() -> new IllegalArgumentException("Médico inexistente"));
+//		this.medicoRepository.save(consulta.getMedico());
+
+		Medico medico = this.medicoRepository
+							.findById(consulta.getMedico().getId())
+							.orElseThrow(() -> new IllegalArgumentException("Médico inexistente"));
 		
-//		consulta.setMedico(medico);							
+		consulta.setMedico(medico);							
 		return this.consultaRepository.save(consulta);
 	}
 
 	@Override
 	public Consulta atualizar(String id, Consulta consultaAtualizada) {
-		Consulta consulta = obterPorCod(id);	
+		Consulta consulta = obterPorCod(id);			
 		
-		consulta.setMedico(consultaAtualizada.getMedico());
-		consulta.setNomePaciente(consultaAtualizada.getNomePaciente());
+		consulta.setNomePaciente(consultaAtualizada.getNomePaciente());	
 		consulta.setDataAgendamento(consultaAtualizada.getDataAgendamento());
-		
+		Medico medico = this.medicoRepository
+							.findById(consultaAtualizada.getMedico().getId())
+							.orElseThrow(() -> new IllegalArgumentException("Médico inexistente"));
+		consulta.setMedico(medico);
+				
 		return this.consultaRepository.save(consulta);		
 	}
 		

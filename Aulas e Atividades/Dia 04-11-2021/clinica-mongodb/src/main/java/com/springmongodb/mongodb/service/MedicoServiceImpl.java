@@ -29,7 +29,6 @@ public class MedicoServiceImpl implements MedicoService {
 
 	@Override
 	public Medico criar(Medico Medico) {
-
 		return this.medicoRepository.save(Medico);
 	}
 		

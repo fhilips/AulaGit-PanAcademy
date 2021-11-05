@@ -6,7 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document() // registro de um colecao
+@Document()
 public class Consulta implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -15,7 +15,7 @@ public class Consulta implements Serializable {
 	private String nomePaciente;
 	private String dataAgendamento;
 
-	@DBRef()
+	@DBRef(lazy = false)
 	private Medico medico;
 
 	public Consulta(Medico medico, String id, String nomePaciente, String dataAgendamento) {
